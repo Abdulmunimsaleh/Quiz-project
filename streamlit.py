@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import joblib
 import pickle as pk
 
 st.title('Quiz Grade Predictor')
