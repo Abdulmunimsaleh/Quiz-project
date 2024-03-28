@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
 import pickle as pk
+import joblib
 
 st.title('Quiz Grade Predictor')
 
 # Load the trained model from the file
 model_path = 'extra_trees_model.pkl'  # Ensure this path is correct
-loaded_model = pk.load(model_path)
+loaded_model = joblib.load(model_path)
 
 # User input for the grades
 st.header('Enter Grades')
